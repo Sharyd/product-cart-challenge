@@ -1,6 +1,6 @@
 import React, { ReactNode, useState } from 'react'
 import { useShoppingCartAndNav } from '../store/CartContext'
-import Cart from './Cart'
+
 import Navbar from './Navbar'
 
 interface Props {
