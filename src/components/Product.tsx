@@ -13,7 +13,7 @@ const Product = () => {
     const [activeLargeImage, setActiveLargeImage] = useState(0)
     const [activeProduct, setActiveProduct] = useState(0)
     const [isActiveLightBox, setIsActiveLightBox] = useState(false)
-    const { cartItems, setCartItems, activeMobileNav, setActiveMobileNav } =
+    const { cartItems, setCartItems, activeMobileNav } =
         useShoppingCartAndNav()
     const handleActiveImage = (idx: number) => {
         setActiveLargeImage(idx)
