@@ -56,10 +56,10 @@ const Product = () => {
                         : ''
                 }max-h-full w-full flex flex-col md:flex-row   items-center p-4 overflow-x-hidden md:overflow-x-visible  sm:p-10 lg:p-20 justify-center gap-10  lg:gap-24`}
             >
-                <div className="relative flex p-0 sm:p-4 flex-col gap-6 w-[425px] sm:w-[400px] xl:w-[450px]">
+                <div className="relative flex p-0 sm:p-4 flex-col gap-6 w-[425px] sm:w-[400px] xl:w-[550px]">
                     <img
                         onClick={() => setIsActiveLightBox(true)}
-                        className="cursor-pointer h-[350px]  object-cover rounded-xl"
+                        className="cursor-pointer h-full w-full  object-cover rounded-xl"
                         src={
                             data[activeProduct].images[activeLargeImage]
                                 .largeImage
@@ -111,7 +111,7 @@ const Product = () => {
                             <p className="text-orange uppercase font-bold text-sm">
                                 {product.company}
                             </p>
-                            <h2 className="font-bold text-4xl">
+                            <h2 className="font-bold text-5xl">
                                 {product.name}
                             </h2>
                             <p className="text-DarkGrayishBlue">

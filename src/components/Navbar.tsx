@@ -35,7 +35,7 @@ const Navbar = ({ activeMobileNav, setActiveMobileNav }: Props) => {
         <>
             <nav
                 className={`${!activeMobileNav && 'relative'}
-                flex justify-between px-6 w-full items-center gap-3 h-14 sm:h-32 sm:customBorderBottom`}
+                flex justify-between px-8 md:px-4 w-full mb-10 items-center gap-3 h-14 sm:h-24 sm:customBorderBottom`}
             >
                 <div className="flex justify-center items-center gap-6 lg:gap-16">
                     <div
@@ -72,7 +72,7 @@ const Navbar = ({ activeMobileNav, setActiveMobileNav }: Props) => {
                     ) : (
                         ''
                     )}
-                    <ul className="lg:flex hidden items-end h-32 justify-center gap-8">
+                    <ul className="lg:flex hidden items-end  justify-center gap-8">
                         {LinkData.map((link, idx) => (
                             <li
                                 onClick={() => setActiveLink(idx)}
@@ -80,7 +80,7 @@ const Navbar = ({ activeMobileNav, setActiveMobileNav }: Props) => {
                                     activeLink === idx
                                         ? 'text-black border-b-[5px] border-orange'
                                         : 'text-DarkGrayishBlue'
-                                } text-lg h-32 cursor-pointer flex  items-center  hover:text-black`}
+                                } text-lg h-32 cursor-pointer flex items-center hover:text-black`}
                                 key={link}
                             >
                                 {link}
@@ -89,7 +89,7 @@ const Navbar = ({ activeMobileNav, setActiveMobileNav }: Props) => {
                     </ul>
                 </div>
 
-                <div className="relative flex items-center justify-center gap-7">
+                <div className={`relative flex items-center justify-center gap-7 md:gap-12 ${activeMobileNav && "opacity-30 -z-10" }`}>
                     <button
                         className="text-DarkGrayishBlue hover:text-black"
                         onClick={() => setActiveCart((prev) => !prev)}

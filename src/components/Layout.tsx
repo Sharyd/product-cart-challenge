@@ -15,7 +15,7 @@ const Layout = ({ children }: Props) => {
                 className={`relative ${
                     activeMobileNav
                         ? ' bg-black/60  w-screen min-h-screen overflow-y-hidden'
-                        : 'max-w-[1440px]'
+                        : 'max-w-[1840px]'
                 }  max-h-screen px-0 sm:px-16 xl:px-36 py-4 m-auto`}
             >
                 <header>

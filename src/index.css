@@ -9,6 +9,6 @@ html {
 
 @layer components {
     .customBorderBottom {
-        @apply after:absolute  after:bottom-0 after:right-0 after:w-full after:bg-GrayishBlue after:h-[1px];
+        @apply after:absolute  after:-bottom-4 after:right-0  px-4 after:w-full after:bg-GrayishBlue after:h-[1px];
     }
 }
