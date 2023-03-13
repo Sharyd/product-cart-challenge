@@ -58,7 +58,7 @@ const LightBox = ({
                     {data[activeProduct].images.map((image, idx) => (
                         <div
                             key={idx}
-                            className={`rounded-2xl w-max h-max bg-white ${
+                            className={`rounded-2xl w-max h-full bg-white ${
                                 activeLargeImage === idx
                                     ? 'border-[3px] border-orange'
                                     : ''

@@ -82,7 +82,7 @@ const Product = () => {
                         {data[activeProduct].images.map((image, idx) => (
                             <div
                                 key={idx}
-                                className={`rounded-2xl w-20  ${
+                                className={`rounded-2xl w-28  ${
                                     activeLargeImage === idx
                                         ? 'border-[3px] border-orange'
                                         : ''
